@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "authorize": "/components/authorize/authorize"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

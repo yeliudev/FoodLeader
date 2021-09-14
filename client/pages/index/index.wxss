@@ -1,0 +1,314 @@
+.title-bar {
+  background-color: black;
+}
+
+.track {
+  display: inline-block;
+  width: 250rpx;
+  height: 65rpx;
+  background-color: black;
+  color: white;
+  font-size: 36rpx;
+  text-align: center;
+  padding-top: 12rpx;
+  font-family: PingFang SC;
+  position: relative;
+  right: -250rpx;
+}
+
+.rank {
+  display: inline-block;
+  width: 250rpx;
+  height: 65rpx;
+  background-color: black;
+  color: white;
+  font-size: 36rpx;
+  text-align: center;
+  padding-top: 12rpx;
+  font-family: PingFang SC;
+  position: relative;
+  right: -250rpx;
+}
+
+.line-track, .line-rank {
+  background-color: white;
+  height: 6rpx;
+  position: relative;
+  top: -2rpx;
+  border-radius: 20rpx;
+}
+
+.line-track {
+  width: 81rpx;
+  right: -85rpx;
+}
+
+.line-rank {
+  width: 121rpx;
+  right: -65rpx;
+}
+
+.track-page {
+  width: 750rpx;
+  background-color: black;
+}
+
+.cover {
+  width: 750rpx;
+  height: 250rpx;
+  background-color: black;
+}
+
+.location {
+  display: inline-block;
+  position: absolute;
+  top: 17rpx;
+  left: 55rpx;
+}
+
+.location-icon {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.location-text {
+  position: relative;
+  top: -10rpx;
+  right: -5rpx;
+  color: white;
+  font-size: 30rpx;
+}
+
+.space {
+  width: 750rpx;
+  height: 120rpx;
+  background-color: white;
+}
+
+.ad {
+  width: 750rpx;
+  height: 320rpx;
+  position: relative;
+  bottom: -20rpx;
+}
+
+.ad-image {
+  width: 710rpx;
+  height: 310rpx;
+  position: relative;
+  right: -20rpx;
+  background-color: #cdcdcd;
+  border-radius: 10rpx;
+  box-shadow: 1rpx 2rpx 10rpx #8a8a8a;
+}
+
+.bottom, .empty {
+  text-align: center;
+  font-size: 28rpx;
+  color: #8a8a8a;
+  background-color: white;
+  padding: 100rpx 0 100rpx;
+}
+
+.bottom {
+  padding: 100rpx 0 100rpx;
+}
+
+.empty {
+  width: 590rpx;
+  height: 340rpx;
+  padding: 280rpx 80rpx 210rpx;
+}
+
+.all, .group, .friend {
+  display: inline-block;
+  width: 250rpx;
+  height: 70rpx;
+  background-color: #090d22;
+  color: #eb8d03;
+  font-size: 32rpx;
+  text-align: center;
+  padding-top: 30rpx;
+  font-family: PingFang SC;
+}
+
+.first-class {
+  width: 750rpx;
+  height: 330rpx;
+  background-color: #090d22;
+  color: #eb8d03;
+}
+
+.location-first, .location-first-group {
+  height: 50rpx;
+  position: relative;
+  bottom: -130rpx;
+  font-size: 28rpx;
+  background-color: #eb8d03;
+  color: white;
+  padding-top: 8rpx;
+  padding-left: 8rpx;
+  border-top-right-radius: 80rpx;
+  border-bottom-right-radius: 80rpx;
+}
+
+.location-first {
+  width: 175rpx;
+}
+
+.location-first-group {
+  width: 135rpx;
+}
+
+.color-bar {
+  width: 400rpx;
+  height: 120rpx;
+  position: absolute;
+  top: 320rpx;
+  left: 185rpx;
+}
+
+.first-avatar {
+  width: 140rpx;
+  height: 140rpx;
+  position: absolute;
+  top: 256rpx;
+  left: 305rpx;
+  background-color: #cdcdcd;
+  border-radius: 100%;
+  border: 2rpx solid white;
+}
+
+.crown {
+  width: 300rpx;
+  height: 150rpx;
+  position: absolute;
+  top: 172rpx;
+  left: 230rpx;
+}
+
+.first-name {
+  width: 180rpx;
+  height: 45rpx;
+  position: absolute;
+  top: 399rpx;
+  right: 285rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.first-coin {
+  width: 200rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 450rpx;
+  right: 275rpx;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.share-button {
+  position: relative;
+  width: 670rpx;
+  height: 88rpx;
+  border-radius: 50rpx;
+  background-color: rgba(22, 20, 24, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 34rpx;
+  text-align: center;
+  font-family: PingFang SC;
+  border: 1px solid rgba(187, 187, 187, 1);
+  margin-bottom: 30rpx;
+  margin-top: 50rpx;
+}
+
+.share-button:active {
+  background-color: #e2e1e3;
+  color: #69686a;
+}
+
+.rank-item {
+  width: 750rpx;
+  height: 150rpx;
+  border-bottom: 2rpx solid #cdcdcd;
+  color: #515151;
+}
+
+.rank-title {
+  width: 100rpx;
+  font-size: 32rpx;
+  position: relative;
+  bottom: -55rpx;
+  right: -30rpx;
+}
+
+.rank-avatar {
+  width: 110rpx;
+  height: 110rpx;
+  position: relative;
+  top: -20rpx;
+  right: -150rpx;
+  background-color: #cdcdcd;
+  border-radius: 100%;
+}
+
+.rank-name {
+  width: 300rpx;
+  font-size: 32rpx;
+  position: relative;
+  top: -135rpx;
+  right: -300rpx;
+  overflow: hidden;
+}
+
+.rank-coin {
+  width: 200rpx;
+  font-size: 32rpx;
+  position: relative;
+  top: -133rpx;
+  right: -300rpx;
+  color: #eb8d03;
+  overflow: hidden;
+}
+
+.rank-page {
+  width: 750rpx;
+}
+
+.comment-box {
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  height: 100rpx;
+  background-color: white;
+  border-top: 1rpx solid #cdcdcd;
+}
+
+.singleline-input {
+  font-size: 30rpx;
+  color: #515151;
+  width: 610rpx;
+  height: 90rpx;
+  position: relative;
+  right: -15rpx;
+}
+
+.comment-submit {
+  font-size: 30rpx;
+  color: white;
+  background-color: #00d244;
+  width: 64rpx;
+  height: 42rpx;
+  position: relative;
+  right: -632rpx;
+  top: -80rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid white;
+  padding: 13rpx 20rpx;
+}
+
+.comment-submit:active {
+  background-color: #cdcdcd;
+}

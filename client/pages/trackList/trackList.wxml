@@ -1,0 +1,11 @@
+<authorize bindhideAuthorize='onHideAuthorize' wx:if='{{ showAuthorize }}' />
+<inputBox title='新建菜单' placeholder='给菜单起个名字吧' bindinputCancel='onInputCancel' bindinputConfirm='onInputConfirm' wx:if='{{ addingMenu }}' />
+<collection menus='{{ menus }}' bindshowInputBox='onShowInputBox' bindcollect='onCollect' bindhideMenuList='onHideMenuList' wx:if='{{ collecting }}' />
+<track trackId='{{ item.trackId }}' username='{{ item.username }}' avatarUrl='{{ item.avatarUrl }}' createTime='{{ item.createTime }}' text='{{ item.text }}' photos='{{ item.photos }}' coordinate='{{ item.coordinate }}' occupy='{{ item.occupy }}' collect='{{ item.collect }}'
+  open_id='{{ item.open_id }}' comments='{{ item.comments }}' followed='{{ item.followed }}' address='{{ item.address }}' bindoccupy='onOccupy' bindfollow='onFollow' bindshowMenuList='onShowMenuList' binduncollect='onUncollect' bindcomment='onComment' bindreply='onReply' binddeleteComment='onDeleteComment'
+  wx:key='{{ index }}' wx:for='{{ track }}' />
+<view class='empty' wx:if='{{ !track.length }}'>Ta还没有发布过足迹哦～</view>
+<view class='comment-box' wx:if='{{ commentting }}'>
+  <input class='singleline-input' placeholder='{{ placeholder }}' focus cursor-spacing='0' maxlength='140' bindinput='onInput' />
+  <view class='comment-submit' bindtap='onCommentSubmit'>发送</view>
+</view>

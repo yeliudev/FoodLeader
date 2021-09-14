@@ -1,0 +1,6 @@
+<authorize bindhideAuthorize='onHideAuthorize' wx:if='{{ showAuthorize }}' />
+<view class='user' id='{{ item.open_id }}' wx:key='{{ index }}' wx:for='{{ user }}' catchtap='onUserTap'>
+  <image class='avatar' id='{{ item.open_id }}' src='{{ item.avatarUrl }}' catchtap='onUserTap' />
+  <text class='username' id='{{ item.open_id }}' catchtap='onUserTap'>{{ item.username }}</text>
+  <view class='unfollow' id='{{ item.open_id }}' catchtap='onUnfollowTap'>取消关注</view>
+</view>

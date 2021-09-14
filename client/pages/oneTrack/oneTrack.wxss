@@ -1,0 +1,109 @@
+.place {
+  width: 750rpx;
+  height: 150rpx;
+}
+
+.place-wide {
+  width: 750rpx;
+  height: 330rpx;
+}
+
+.comment-box {
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  height: 100rpx;
+  background-color: white;
+  border-top: 1rpx solid #cdcdcd;
+}
+
+.singleline-input {
+  font-size: 30rpx;
+  color: #515151;
+  width: 610rpx;
+  height: 90rpx;
+  position: relative;
+  right: -15rpx;
+}
+
+.comment-submit {
+  font-size: 30rpx;
+  color: white;
+  background-color: #00d244;
+  width: 64rpx;
+  height: 42rpx;
+  position: relative;
+  right: -632rpx;
+  top: -80rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid white;
+  padding: 13rpx 20rpx;
+}
+
+.comment-submit:active {
+  background-color: #cdcdcd;
+}
+
+.share-button {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right: 30rpx;
+  bottom: 170rpx;
+  border-radius: 100%;
+  background-color: #f14f00;
+  transition: transform ease-in 0.08s;
+  box-shadow: 0 4rpx 15rpx #f14f00;
+}
+
+.share-button:active {
+  transform: scale(0.88);
+}
+
+.share-icon {
+  width: 57rpx;
+  height: 57rpx;
+  position: relative;
+  bottom: -19rpx;
+  left: -7rpx;
+}
+
+.back-button {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right: 30rpx;
+  bottom: 40rpx;
+  border-radius: 100%;
+  background-color: black;
+  transition: transform ease-in 0.08s;
+  box-shadow: 0 4rpx 15rpx black;
+}
+
+.back-button:active {
+  transform: scale(0.88);
+}
+
+.back-icon {
+  width: 59rpx;
+  height: 59rpx;
+  position: relative;
+  bottom: -19rpx;
+  left: -6rpx;
+}
+
+.share-button-low {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right: 30rpx;
+  bottom: 40rpx;
+  border-radius: 100%;
+  background-color: #f14f00;
+  transition: transform ease-in 0.08s;
+  box-shadow: 0 4rpx 15rpx #f14f00;
+}
+
+.share-button-low:active {
+  transform: scale(0.88);
+}

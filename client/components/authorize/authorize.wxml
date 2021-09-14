@@ -1,0 +1,9 @@
+<view class='authorize-container'>
+  <view class='shadow' style='opacity:{{ shadowOpacity }};animation:{{ shadowAnimation }} 0.35s;' />
+  <view class='modal' style='top:{{ modalTop }}rpx;opacity:{{ modalOpacity }};animation:{{ modalAnimation }} 0.35s;'>
+    <image class='background' src='/assets/auth-bg.png' />
+    <image class='reject' src='/assets/reject-auth.png' catchtap='onRejectTap' />
+    <image class='accept' src='/assets/accept-auth.png' catchtap='onAcceptTap' />
+    <image class='close' src='/assets/close-btn.png' catchtap='onRejectTap' />
+  </view>
+</view>

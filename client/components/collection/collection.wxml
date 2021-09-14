@@ -1,0 +1,17 @@
+<view class='inputBox-container' catchtap='onShadowTap'>
+  <view class='shadow' style='opacity:{{ shadowOpacity }};animation:{{ shadowAnimation }} 0.35s;' />
+  <view class='modal' style='top:{{ modalTop }}rpx;opacity:{{ modalOpacity }};animation:{{ modalAnimation }} 0.35s;'>
+    <view class='title'>收藏到菜单</view>
+    <scroll-view class='menus' scroll-y>
+      <view class='menu' catchtap='onAddMenuTap'>
+        <image class='menu-icon' src='/assets/add_image.png' />
+        <text class='add-menu-title'>新建菜单</text>
+      </view>
+      <view class='menu' id='{{ item.menu_id }}' catchtap='onMenuTap' wx:key='{{ index }}' wx:for='{{ menus }}'>
+        <image class='menu-icon' src='{{ item.imageUrl }}' mode='aspectFill' />
+        <view class='menu-title'>{{ item.name }}</view>
+        <view class='count'>{{ item.count }}份</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+.user {
+  width: 750rpx;
+  height: 160rpx;
+  border-bottom: 1rpx solid #cdcdcd;
+}
+
+.avatar {
+  position: relative;
+  bottom: -25rpx;
+  right: -30rpx;
+  height: 110rpx;
+  width: 110rpx;
+  border-radius: 100%;
+  background-color: #cdcdcd;
+}
+
+.username {
+  position: relative;
+  top: -15rpx;
+  right: -60rpx;
+  font-size: 34rpx;
+  color: #515151;
+  overflow: hidden;
+}
+
+.unfollow {
+  position: relative;
+  top: -70rpx;
+  right: -542rpx;
+  width: 180rpx;
+  height: 50rpx;
+  padding-top: 8rpx;
+  font-size: 30rpx;
+  color: white;
+  text-align: center;
+  border-radius: 50rpx;
+  background-color: #ff2236;
+}

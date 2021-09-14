@@ -1,0 +1,282 @@
+.track-container {
+  background-color: white;
+  padding-top: 20rpx;
+  border-bottom: 20rpx solid #f1f2f4;
+}
+
+.track-container-single {
+  background-color: white;
+  padding-top: 20rpx;
+}
+
+.avatar-container {
+  display: inline-block;
+  margin: 25rpx 20rpx 0;
+  height: 120rpx;
+  width: 120rpx;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.avatar {
+  height: 120rpx;
+  width: 120rpx;
+}
+
+.user-info {
+  display: inline-block;
+  position: relative;
+  margin-right: 10rpx;
+  top: -22rpx;
+  width: 406rpx;
+  overflow: hidden;
+}
+
+.username {
+  width: 406rpx;
+  display: block;
+  margin-bottom: 4rpx;
+  font-size: 32rpx;
+  color: #105a9d;
+  overflow: hidden;
+}
+
+.creat-time {
+  display: block;
+  position: relative;
+  right: -1rpx;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+
+.follow, .delete {
+  display: inline-block;
+  position: relative;
+  top: -48rpx;
+  padding-top: 8rpx;
+  width: 140rpx;
+  height: 50rpx;
+  font-size: 30rpx;
+  color: white;
+  text-align: center;
+  border-radius: 50rpx;
+}
+
+.follow:active, .delete:active {
+  background-color: #e2e1e3;
+  color: #69686a;
+}
+
+.follow {
+  background-color: black;
+}
+
+.delete {
+  background-color: #ff2236;
+}
+
+.followed {
+  display: inline-block;
+  position: relative;
+  top: -48rpx;
+  padding-top: 8rpx;
+  width: 140rpx;
+  height: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  border-radius: 50rpx;
+  color: #cdcdcd;
+  border: 1rpx solid #cdcdcd;
+}
+
+.text {
+  margin-bottom: 15rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+}
+
+.single-photo {
+  margin: 0 10rpx 12rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.flex-container {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.photo {
+  margin: 0 10rpx 12rpx 0;
+  width: 230rpx;
+  height: 230rpx;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 10rpx;
+}
+
+.none-photo {
+  margin-left: 20rpx;
+}
+
+.first-container, .second-container, .last-container {
+  display: inline-block;
+  margin: 10rpx 0 6rpx;
+  position: relative;
+  right: -25rpx;
+  width: 230rpx;
+  height: 65rpx;
+}
+
+.first-container {
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top: 1rpx solid rgb(255, 152, 0);
+  border-left: 1rpx solid rgb(255, 152, 0);
+  border-bottom: 1rpx solid rgb(255, 152, 0);
+}
+
+.second-container {
+  border-top: 1rpx solid rgb(255, 152, 0);
+  border-bottom: 1rpx solid rgb(255, 152, 0);
+}
+
+.last-container {
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  border-top: 1rpx solid rgb(255, 152, 0);
+  border-right: 1rpx solid rgb(255, 152, 0);
+  border-bottom: 1rpx solid rgb(255, 152, 0);
+}
+
+.right {
+  margin: 11rpx 92rpx 0;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.last {
+  margin: 11rpx 42rpx 0;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.occupy-text {
+  position: relative;
+  top: -11rpx;
+  left: -30rpx;
+  color: #515151;
+  font-size: 28rpx;
+}
+
+.location {
+  display: inline-block;
+  margin: 0 20rpx 0;
+  width: 550rpx;
+  height: 70rpx;
+  overflow: hidden;
+}
+
+.location-icon {
+  width: 43rpx;
+  height: 43rpx;
+}
+
+.location-text {
+  position: relative;
+  top: -12rpx;
+  right: -3rpx;
+  line-height: 100rpx;
+  font-size: 24rpx;
+  color: #69686a;
+}
+
+.collect {
+  display: block;
+  position: relative;
+  right: -617rpx;
+  top: -53rpx;
+  width: 41rpx;
+  height: 41rpx;
+}
+
+.collect:active {
+  right: -618rpx;
+  top: -51rpx;
+}
+
+.comment {
+  display: block;
+  position: relative;
+  right: -678rpx;
+  top: -94rpx;
+  width: 41rpx;
+  height: 42rpx;
+}
+
+.comment:active {
+  right: -679rpx;
+  top: -92rpx;
+}
+
+.south {
+  margin-top: 5rpx;
+  height: 90rpx;
+  margin-bottom: 20rpx;
+}
+
+.comment-info {
+  width: 610rpx;
+  position: relative;
+  right: -100rpx;
+  margin-bottom: 40rpx;
+  background-color: #e9e6eb;
+  border-radius: 5rpx;
+}
+
+.triangle-border-up {
+  width: 0;
+  height: 0;
+  border-width: 0 20rpx 20rpx;
+  border-style: solid;
+  border-color: transparent transparent #e9e6eb;
+  position: relative;
+  top: -20rpx;
+  right: -30rpx;
+}
+
+.comment-text {
+  width: 580rpx;
+  position: relative;
+  top: -10rpx;
+  right: -15rpx;
+  font-size: 30rpx;
+  color: #515151;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.comment-text:active {
+  background-color: #cdcbcf;
+}
+
+.many {
+  display: inline;
+}
+
+.blue {
+  color: #1e669d;
+}
+
+.comment-text-blue {
+  width: 580rpx;
+  position: relative;
+  top: -10rpx;
+  right: -15rpx;
+  font-size: 30rpx;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #747375;
+}

@@ -1,0 +1,108 @@
+.message {
+  width: 750rpx;
+  height: 180rpx;
+  border-bottom: 1rpx solid #cdcdcd;
+}
+
+.message:active {
+  background-color: #cdcdcd;
+}
+
+.avatar {
+  margin: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #cdcdcd;
+  border-radius: 100%;
+}
+
+.name {
+  position: relative;
+  top: -150rpx;
+  right: -170rpx;
+  width: 400rpx;
+  color: #1e669d;
+  font-size: 32rpx;
+  overflow: hidden;
+}
+
+.occupy {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: -138rpx;
+  right: -170rpx;
+}
+
+.text-grey {
+  width: 220rpx;
+  height: 43rpx;
+  font-size: 30rpx;
+  color: #898989;
+  position: relative;
+  top: -139rpx;
+  right: -170rpx;
+  overflow: hidden;
+  background-color: #cdcdcd;
+  border-radius: 5rpx;
+  padding-left: 10rpx;
+}
+
+.text {
+  width: 400rpx;
+  height: 46rpx;
+  font-size: 30rpx;
+  color: #515151;
+  position: relative;
+  top: -143rpx;
+  right: -170rpx;
+  overflow: hidden;
+}
+
+.time {
+  font-size: 28rpx;
+  color: #8a8a8a;
+  position: relative;
+  top: -140rpx;
+  right: -170rpx;
+  width: 400rpx;
+  overflow: hidden;
+}
+
+.first-image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 8rpx;
+  background-color: #cdcdcd;
+  position: relative;
+  top: -273rpx;
+  right: -594rpx;
+}
+
+.track-text {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 8rpx;
+  color: #515151;
+  position: relative;
+  top: -273rpx;
+  right: -594rpx;
+  font-size: 30rpx;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.more {
+  width: 750rpx;
+  height: 76rpx;
+  border-bottom: 1rpx solid #cdcdcd;
+  color: #1e669d;
+  text-align: center;
+  font-size: 32rpx;
+  padding-top: 30rpx;
+}
+
+.more:active {
+  background-color: #cdcdcd;
+}

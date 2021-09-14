@@ -1,0 +1,53 @@
+<view class='{{ single ? "track-container-single" : "track-container" }}' catchtap='onTrackTap'>
+  <view class='avatar-container' catchtap='onUserTap'>
+    <image class='avatar' src='{{ avatarUrl }}' mode='aspectFit' />
+  </view>
+  <view class='user-info'>
+    <text class='username' catchtap='onUserTap'>{{ username }}</text>
+    <text class='creat-time'>{{ createTime }}</text>
+  </view>
+  <view class='follow' catchtap='onFollowTap' wx:if='{{ !followed }}'>关注</view>
+  <view class='delete' catchtap='onDeleteTap' wx:elif='{{ delete }}'>删除</view>
+  <view class='followed' wx:else>已关注</view>
+  <view class='text'>
+    <text>{{ text }}</text>
+  </view>
+  <image class='photo none-photo' mode='aspectFill' src='{{ photos[0] }}' id='0' catchtap='onOnePhotoTap' wx:if='{{ photos.length === 1 && !hasInfo }}' />
+  <image class='single-photo' mode='aspectFit' src='{{ photos[0] }}' id='0' style='width:{{ width }}rpx;height:{{ height }}rpx;' catchtap='onPhotoTap' wx:elif='{{ photos.length === 1 && hasInfo }}' />
+  <view class='flex-container' wx:elif='{{ photos.length > 1 }}'>
+    <image class='photo' mode='aspectFill' src='{{ item }}' id='{{ index }}' catchtap='onPhotoTap' wx:key='{{ index }}' wx:for='{{ photos }}' />
+  </view>
+  <view catchtap='onOccupyTap'>
+    <view class='first-container' style='background-color: {{ occupy >= 1 ? "#ff9800" : "#f9f9f9" }};'>
+      <image class='right' src='{{ "/assets/right" + (occupy >= 1 ? "-active.png" : ".png") }}' />
+    </view>
+    <view class='second-container' style='background-color: {{ occupy >= 2 ? "#ff9800" : "#f9f9f9" }};border-left: 1rpx solid {{ occupy >= 2 ? "#f9f9f9" : "#ff9800" }};border-right: 1rpx solid {{ occupy >= 2 ? "#f9f9f9" : "#ff9800" }};'>
+      <image class='right' src='{{ "/assets/right" + (occupy >= 2 ? "-active.png" : ".png") }}' />
+    </view>
+    <view class='last-container' style='background-color: {{ occupy >= 3 ? "#ff9800" : "#f9f9f9" }};'>
+      <image class='last' src='{{ "/assets/occupy" + (occupy >= 3 ? "-active.png" : ".png") }}' />
+      <text class='occupy-text' style='color:{{ occupy >= 3 ? "#fff" : "#515151" }};'>{{ occupy >= 3 ? '已占领' : '未占领' }}</text>
+    </view>
+  </view>
+  <view class='south'>
+    <view class='location' catchtap='onLocationTap'>
+      <image class='location-icon' src='{{ "/assets/location" + (address ? "-color.png" : ".png") }}' />
+      <text class='location-text'>{{ address ? address : '无定位信息' }}</text>
+    </view>
+    <image class='collect' src='{{ "/assets/collect" + (collect ? "-active.png" : "ion.png" ) }}' catchtap='onCollectTap' />
+    <image class='comment' src='/assets/comment.png' catchtap='onCommentTap' />
+  </view>
+  <view class='comment-info' wx:if='{{ showComment && comments.length }}'>
+    <view class='triangle-border-up' />
+    <view class='comment-text' id='{{ item.commentId }}' wx:key='{{ index }}' wx:for='{{ first5comments.length ? first5comments : comments }}' catchtap='onTextTap'>
+      <text class='blue' wx:if='{{ item.one }}'>{{ item.one }}</text>
+      <view class='many' wx:else>
+        <text class='blue'>{{ item.from }}</text>
+        <text> 回复 </text>
+        <text class='blue'>{{ item.to }}</text>
+      </view>
+      <text> : {{ item.text }}</text>
+    </view>
+    <view class='comment-text-blue' wx:if='{{ first5comments.length }}' catchtap='onMoreTap'>更多</view>
+  </view>
+</view>

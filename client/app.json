@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/oneTrack/oneTrack",
+    "pages/message/message",
+    "pages/me/me",
+    "pages/occupy/occupy",
+    "pages/edit/edit",
+    "pages/myTrack/myTrack",
+    "pages/authorize/authorize",
+    "pages/occupied/occupied",
+    "pages/follow/follow",
+    "pages/editMenu/editMenu",
+    "pages/editMenus/editMenus",
+    "pages/recover/recover",
+    "pages/collect/collect",
+    "pages/trackList/trackList",
+    "pages/ad/ad"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "美食大主角",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#ffffff",
+    "backgroundColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "隔壁桌",
+        "iconPath": "assets/1.png",
+        "selectedIconPath": "assets/1-active.png"
+      },
+      {
+        "pagePath": "pages/occupy/occupy",
+        "text": "占领",
+        "iconPath": "assets/2.png",
+        "selectedIconPath": "assets/2-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "assets/3.png",
+        "selectedIconPath": "assets/3-active.png"
+      }
+    ]
+  }
+}

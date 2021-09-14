@@ -1,0 +1,15 @@
+<authorize bindhideAuthorize='onHideAuthorize' wx:if='{{ showAuthorize }}' />
+<inputBox title='新建菜单' placeholder='给菜单起个名字吧' bindinputCancel='onInputCancel' bindinputConfirm='onInputConfirm' wx:if='{{ addingMenu }}' />
+<collection menus='{{ menus }}' bindshowInputBox='onShowInputBox' bindcollect='onCollect' bindhideMenuList='onHideMenuList' wx:if='{{ collecting }}' />
+<view class='ad' bindtap='onAdTap' wx:if='{{ ad.imageUrl }}'>
+  <image class='ad-image' src='/assets/test.png' mode='aspectFit' />
+</view>
+<track trackId='{{ item.trackId }}' username='{{ item.username }}' avatarUrl='{{ item.avatarUrl }}' createTime='{{ item.createTime }}' text='{{ item.text }}' photos='{{ item.photos }}' coordinate='{{ item.coordinate }}' occupy='{{ item.occupy }}' collect='{{ item.collect }}'
+  open_id='{{ item.open_id }}' menuList='{{ menuList }}' comments='{{ item.comments }}' followed='{{ item.followed }}' address='{{ item.address }}' bindoccupy='onOccupy' bindshowMenuList='onShowMenuList' bindfollow='onFollow' binduncollect='onUncollect'
+  binddelete='onDelete' bindcomment='onComment' bindreply='onReply' binddeleteComment='onDeleteComment' wx:key='{{ index }}' wx:for='{{ track }}' />
+<button class='{{ showHome ? "share-button" : "share-button-low" }}' open-type='share'>
+  <image class='share-icon' src='/assets/share-white.png' />
+</button>
+<button class='back-button' bindtap='onBackTap' wx:if='{{ showHome }}'>
+  <image class='back-icon' src='/assets/home.png' />
+</button>

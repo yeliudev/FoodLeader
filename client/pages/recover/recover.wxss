@@ -1,0 +1,94 @@
+.menu {
+  width: 750rpx;
+  height: 160rpx;
+}
+
+.menu:active, .all:active, .recover:active {
+  background-color: #cdcdcd;
+}
+
+.check {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: -55rpx;
+  right: -50rpx;
+}
+
+.menu-image {
+  margin: 20rpx 20rpx 20rpx 95rpx;
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #cdcdcd;
+  border-radius: 15rpx;
+}
+
+.name {
+  display: block;
+  position: relative;
+  top: -135rpx;
+  right: -280rpx;
+  font-size: 30rpx;
+  color: #515151;
+}
+
+.count {
+  display: block;
+  position: relative;
+  top: -125rpx;
+  right: -280rpx;
+  font-size: 27rpx;
+  color: #6d6c6d;
+}
+
+.line {
+  position: relative;
+  top: -92rpx;
+  right: -270rpx;
+  width: 480rpx;
+  border-bottom: 1rpx solid #cdcdcd;
+}
+
+.empty {
+  margin-top: 100rpx;
+  width: 750rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #707070;
+}
+
+.bar {
+  width: 750rpx;
+  height: 85rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.all {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 375rpx;
+  height: 85rpx;
+  text-align: center;
+  background-color: rgb(247, 247, 250);
+  border-right: 1rpx solid #cdcdcd;
+}
+
+.recover {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 375rpx;
+  height: 85rpx;
+  text-align: center;
+  background-color: rgb(247, 247, 250);
+}
+
+.text {
+  position: relative;
+  bottom: -15rpx;
+  font-size: 36rpx;
+  color: #515151;
+}

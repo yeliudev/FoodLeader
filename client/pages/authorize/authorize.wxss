@@ -1,0 +1,35 @@
+.notice {
+  margin: 80rpx 80rpx 0;
+  text-align: center;
+  font-size: 32rpx;
+  color: #8a8a8a;
+}
+
+button {
+  margin: 40rpx 50rpx 0;
+  position: relative;
+  right: -15rpx;
+  width: 620rpx;
+  height: 95rpx;
+  border-radius: 50rpx;
+  background-color: rgb(22, 20, 24);
+  color: rgba(255, 255, 255, 1);
+  font-size: 34rpx;
+  text-align: center;
+  font-family: PingFang SC;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.authorized {
+  margin: 40rpx 50rpx 0;
+  position: relative;
+  right: -15rpx;
+  width: 620rpx;
+  height: 70rpx;
+  padding-top: 20rpx;
+  text-align: center;
+  font-size: 34rpx;
+  color: #8a8a8a;
+  border-radius: 50rpx;
+  border: 2rpx solid #8a8a8a;
+}

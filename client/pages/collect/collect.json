@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "track": "/components/track/track",
+    "authorize": "/components/authorize/authorize"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

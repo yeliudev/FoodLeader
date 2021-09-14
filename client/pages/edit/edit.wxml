@@ -1,0 +1,26 @@
+<inputBox title='添加新标签' bindinputCancel='onInputCancel' bindinputConfirm='onInputConfirm' wx:if='{{ addingLabel }}' />
+<view class='notice-container' style='top:{{ notice_top }}rpx;'>
+  <text class='notice'>点击图片可添加标签</text>
+</view>
+<swiper class='photo-swiper' indicator-dots style='top:{{ swiper_top }}rpx;' bindchange='onSwiperChange'>
+  <swiper-item wx:key='{{ index }}' wx:for='{{ photos }}'>
+    <view class='photo-container'>
+      <view class='label' id='{{ label_index }}' wx:key='{{ index }}' wx:for='{{ label[index] }}' wx:for-index='label_index' wx:for-item='label_item' wx:if='{{ label_index > 0 }}' style='left:{{ label_item.x }}px;top:{{ label_item.y }}px;' catchtouchstart='onTouchStart'
+        catchtouchmove='onTouchMove' catchtouchend='onTouchEnd'>
+        <view class='right' wx:if='{{ label_item.right }}'>
+          <view class='dot-right' />
+          <view class='line-right' />
+          <text class='text-right'>{{ label_item.text }}</text>
+        </view>
+        <view wx:else>
+          <view class='dot' />
+          <view class='line' />
+          <text class='text'>{{ label_item.text }}</text>
+        </view>
+      </view>
+      <image class='photo' src='{{ item }}' mode='aspectFit' catchtap='onPhotoTap' />
+    </view>
+  </swiper-item>
+</swiper>
+<view class='submit' style='top:{{ submit_top }}rpx;' bindtap='onSubmit'>完成</view>
+<canvas class="preview-canvas" canvas-id="{{ 'preview_canvas_' + index }}" style='top:{{ 1000 * index + 2000 }}px;width:{{ item[0].photoWidth }}px;height:{{ item[0].photoHeight }}px;' wx:key='{{ index }}' wx:for='{{ label }}' />

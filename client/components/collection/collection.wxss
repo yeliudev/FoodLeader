@@ -1,0 +1,85 @@
+.inputBox-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 100vh;
+  z-index: 20161127;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 750rpx;
+  height: 100vh;
+  z-index: 20161127;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 125rpx;
+  height: 600rpx;
+  background-color: white;
+  width: 500rpx;
+  border-radius: 9rpx;
+  z-index: 20170510;
+}
+
+.title {
+  position: absolute;
+  top: 30rpx;
+  left: 40rpx;
+  font-size: 34rpx;
+  color: #515151;
+}
+
+.menus {
+  position: absolute;
+  top: 100rpx;
+  left: 40rpx;
+  width: 420rpx;
+  height: 460rpx;
+}
+
+.menu {
+  width: 420rpx;
+  height: 120rpx;
+}
+
+.menu-icon {
+  position: relative;
+  bottom: -10rpx;
+  right: -10rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 5rpx;
+}
+
+.add-menu-title {
+  position: relative;
+  top: -30rpx;
+  right: -50rpx;
+  font-size: 28rpx;
+  color: #515151;
+}
+
+.menu-title {
+  position: relative;
+  top: -92rpx;
+  right: -140rpx;
+  font-size: 28rpx;
+  color: #515151;
+}
+
+.count {
+  position: relative;
+  top: -86rpx;
+  right: -140rpx;
+  font-size: 24rpx;
+  color: #6d6c6d;
+}

@@ -1,0 +1,77 @@
+<authorize bindhideAuthorize='onHideAuthorize' wx:if='{{ showAuthorize }}' />
+<inputBox title='新建菜单' placeholder='给菜单起个名字吧' bindinputCancel='onInputCancel' bindinputConfirm='onInputConfirm' wx:if='{{ addingMenu }}' />
+<collection menus='{{ menus }}' bindshowInputBox='onShowInputBox' bindcollect='onCollect' bindhideMenuList='onHideMenuList' wx:if='{{ collecting }}' />
+<view class='title-bar'>
+  <view class='location' bindtap='onLocationTap'>
+    <image class='location-icon' src='/assets/location-white.png' />
+    <text class='location-text'>{{ city }}</text>
+  </view>
+  <view class='track' style='font-weight:{{ trackFontWeight }};' bindtap='onTrackTap'>
+    <text>足迹</text>
+    <view class='line-track' wx:if='{{ trackDecoration }}' />
+  </view>
+  <view class='rank' style='font-weight:{{ rankFontWeight }};' bindtap='onRankTap'>
+    <text>富豪榜</text>
+    <view class='line-rank' wx:if='{{ rankDecoration }}' />
+  </view>
+</view>
+<view wx:if='{{ showTracks }}'>
+  <view class='cover'>
+    <view class='ad' wx:if='{{ !ad.length }}'>
+      <image class='ad-image' src='/assets/ad.png' mode='aspectFil' />
+    </view>
+    <swiper class='ad' indicator-dots autoplay current='{{ current }}' bindtap='onAdTap' wx:else>
+      <swiper-item wx:key='{{ index }}' wx:for='{{ ad }}'>
+        <image class='ad-image' src='{{ item.imageUrl }}' mode='aspectFil' />
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='space' />
+  <view wx:if='{{ track.length }}'>
+    <track trackId='{{ item.trackId }}' username='{{ item.username }}' avatarUrl='{{ item.avatarUrl }}' createTime='{{ item.createTime }}' text='{{ item.text }}' photos='{{ item.photos }}' coordinate='{{ item.coordinate }}' occupy='{{ item.occupy }}' collect='{{ item.collect }}'
+      open_id='{{ item.open_id }}' followed='{{ item.followed }}' address='{{ item.address }}' comments='{{ item.comments }}' bindfollow='onFollow' bindoccupy='onOccupy' bindshowMenuList='onShowMenuList' binduncollect='onUncollect' bindcomment='onComment'
+      wx:key='{{ index }}' wx:for='{{ track }}' />
+    <view class='bottom'>我可是有底线的哦~</view>
+  </view>
+  <view class='empty' wx:else>哇哦！你是本市第一个发现这里的人，快点击下方占领按钮，分享你的美食足迹，占领这里吧！</view>
+</view>
+<view wx:if='{{ !showTracks }}'>
+  <view class='title-bar'>
+    <view class='all' id='all' style='border-bottom:{{ status === "all" ? "6rpx solid #eb8d03" : "" }};' bindtap='onAllTap'>
+      <text>总榜</text>
+    </view>
+    <view class='group' id='group' style='border-bottom:{{ status === "group" ? "6rpx solid #eb8d03" : "" }};' bindtap='onGroupTap'>
+      <text>周榜</text>
+    </view>
+    <view class='friend' id='friend' style='border-bottom:{{ status === "friend" ? "6rpx solid #eb8d03" : "" }};' bindtap='onFriendTap'>
+      <text>占领榜</text>
+    </view>
+  </view>
+  <view class='first-class'>
+    <view class='location-first' bindtap='onLocationFirstTap' wx:if='{{ status === "all" }}'>{{ city ==='未定位' ?'点此以定位' : (city +'首富') }}</view>
+    <view class='{{ city === "未定位" ? "location-first" : "location-first-group" }}' bindtap='onLocationFirstTap' wx:if='{{ status==="group" }}'>{{ city ==='未定位' ?'点此以定位' :'本周首富' }}</view>
+    <view class='location-first-group' bindtap='onLocationFirstTap' wx:if='{{ status==="friend" }}'>占领王者</view>
+    <view wx:if='{{ first.name }}'>
+      <image class='color-bar' src='/assets/color-bar.png' />
+      <image class='first-avatar' src='{{ first.avatarUrl }}' />
+      <image class='crown' src='/assets/crown.png' />
+      <view class='first-name'>{{ first.name }}</view>
+      <view class='first-coin' wx:if='{{ status==="friend" }}'>占领
+        <text style='color: white;'>{{ first.coin }}</text> 家</view>
+      <view class='first-coin' wx:else>$ {{ first.coin }}</view>
+    </view>
+  </view>
+  <view class='rank-item' wx:key='{{ index }}' wx:for='{{ people }}'>
+    <view class='rank-title'>NO.{{ index + 2 }}</view>
+    <image class='rank-avatar' src='{{ item.avatarUrl }}' />
+    <view class='rank-name'>{{ item.name }}</view>
+    <view class='rank-coin' wx:if='{{ status==="friend" }}'>占领
+      <text style='color: #515151;'>{{ item.coin }}</text> 家</view>
+    <view class='rank-coin' wx:else>$ {{ item.coin }}</view>
+  </view>
+  <button class='share-button' open-type='share' wx:if='{{ status==="group" }}'>分享</button>
+</view>
+<view class='comment-box' wx:if='{{ commentting }}'>
+  <input class='singleline-input' placeholder='{{ placeholder }}' focus cursor-spacing='0' maxlength='140' bindinput='onInput' />
+  <view class='comment-submit' bindtap='onCommentSubmit'>发送</view>
+</view>

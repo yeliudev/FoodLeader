@@ -1,0 +1,16 @@
+<authorize bindhideAuthorize='onHideAuthorize' wx:if='{{ showAuthorize }}' />
+<textarea class='text' placeholder='分享下你对这家店的感受吧～' value='{{ text }}' bindinput='onInput' />
+<view class='flex-container'>
+  <view class='photo' wx:key='{{ index }}' wx:for='{{ photos }}'>
+    <image class='photo' src='{{ item }}' id='{{ index }}' mode='aspectFill' catchtap='onPhotoTap' />
+    <image class='remove' src='/assets/remove-icon.png' id='{{ index }}' bindtap='onRemovePhotoTap' />
+  </view>
+  <view class='photo' wx:if='{{ canAddPhoto }}'>
+    <image class='add-image-icon' src='/assets/add_image.png' catchtap='onAddPhotoTap' />
+  </view>
+</view>
+<view class='location' bindtap='onChooseLocation'>
+  <image class='location-icon' src='/assets/location0.png' />
+  <text class='location-text'>{{ address }}</text>
+</view>
+<view class='submit' bindtap='onSubmit'>发表</view>

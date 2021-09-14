@@ -1,0 +1,19 @@
+<authorize bindhideAuthorize='onHideAuthorize' wx:if='{{ showAuthorize }}' />
+<scroll-view scroll-y enable-back-to-top style='height:{{ height }}rpx;'>
+  <view class='menu' id='{{ item.menu_id }}' bindtap='onMenuTap' wx:key='{{ index }}' wx:for='{{ menus }}'>
+    <image class='check' src='{{ "/assets/check" + (item.checked ? "-active.png" : ".png") }}' />
+    <image class='menu-image' src='{{ item.imageUrl }}' mode='aspectFill' />
+    <text class='name'>{{ item.name }}</text>
+    <text class='count'>{{ item.count }}份</text>
+    <view class='line' />
+  </view>
+  <view class='empty' wx:if='{{ !menus.length }}'>无可用菜单</view>
+</scroll-view>
+<view class='bar'>
+  <view class='all' bindtap='selectAll'>
+    <text class='text'>{{ all }}</text>
+  </view>
+  <view class='delete' bindtap='onDeleteTap'>
+    <text class='text'>删除</text>
+  </view>
+</view>

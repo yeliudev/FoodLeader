@@ -1,0 +1,68 @@
+.authorize-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 100vh;
+  z-index: 20161127;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 750rpx;
+  height: 100vh;
+  z-index: 20161127;
+}
+
+.modal {
+  position: fixed;
+  left: 75rpx;
+  z-index: 20170510;
+}
+
+.background {
+  width: 620rpx;
+  height: 590rpx;
+}
+
+.reject {
+  width: 160rpx;
+  height: 63rpx;
+  position: relative;
+  right: -110rpx;
+  top: -190rpx;
+}
+
+.reject:active {
+  right: -111rpx;
+  top: -188rpx;
+}
+
+.accept {
+  width: 180rpx;
+  height: 85rpx;
+  position: relative;
+  right: -165rpx;
+  top: -180rpx;
+}
+
+.accept:active {
+  right: -166rpx;
+  top: -178rpx;
+}
+
+.close {
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  right: -170rpx;
+  top: -603rpx;
+}
+
+.close:active {
+  right: -171rpx;
+  top: -601rpx;
+}

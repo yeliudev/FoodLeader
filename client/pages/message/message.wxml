@@ -1,0 +1,12 @@
+<authorize bindhideAuthorize='onHideAuthorize' wx:if='{{ showAuthorize }}' />
+<view class='message' id='{{ index }}' bindtap='onMessageTap' wx:key='{{ index }}' wx:for='{{ messages }}'>
+  <image class='avatar' src='{{ item.avatarUrl }}' mode='aspectFill' />
+  <view class='name'>{{ item.username }}</view>
+  <view class='text-grey' wx:if='{{ item.deleted }}'>啊哦，消息已删除</view>
+  <image class='occupy' src='/assets/love.png' wx:if='{{ !item.deleted && item.love }}' />
+  <view class='text' wx:if='{{ !item.deleted && item.text }}'>{{ item.text }}</view>
+  <view class='time'>{{ item.time }}</view>
+  <image class='first-image' src='{{ item.firstImage }}' mode='aspectFill' wx:if='{{ item.firstImage }}' />
+  <view class='track-text' wx:if='{{ item.trackText }}'>{{ item.trackText }}</view>
+</view>
+<view class='more' bindtap='onMoreTap' wx:if='{{ showMore }}'>更多</view>

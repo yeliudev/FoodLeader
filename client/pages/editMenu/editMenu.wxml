@@ -1,0 +1,10 @@
+<authorize bindhideAuthorize='onHideAuthorize' wx:if='{{ showAuthorize }}' />
+<inputBox title='修改名称' placeholder='{{ name }}' bindinputCancel='onInputCancel' bindinputConfirm='onInputConfirm' wx:if='{{ editting }}' />
+<view class='container' bindtap='onEditImage'>
+  <text class='title'>更换封面</text>
+  <image class='image' src='{{ imageUrl }}' mode='aspectFill' />
+</view>
+<view class='container' bindtap='onEditName'>
+  <text class='title'>名称</text>
+  <text class='name'>{{ name }}</text>
+</view>

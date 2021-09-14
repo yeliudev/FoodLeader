@@ -1,0 +1,77 @@
+<authorize bindhideAuthorize='onHideAuthorize' wx:if='{{ showAuthorize }}' />
+<inputBox title='新建菜单' placeholder='给菜单起个名字吧' bindinputCancel='onInputCancel' bindinputConfirm='onInputConfirm' wx:if='{{ addingMenu }}' />
+<view class='shadow' style='opacity:{{ shadowOpacity }};animation:{{ shadowAnimation }} 0.35s;' catchtap='onShadowTap' wx:if='{{ titleRichTabBarDidOpen || menuRichTabBarDidOpen }}' />
+<view class='info'>
+  <view class='avatar-container' bindlongpress='onLongTap'>
+    <open-data type='userAvatarUrl' />
+  </view>
+  <open-data type='userNickName' class='username' />
+  <text class='coin' bindtap='onCoinTap'>财富币：{{ coin }}</text>
+</view>
+<view class='space' />
+<view class='list'>
+  <view class='item' bindtap='onMessageTap'>
+    <image class='icon' src='/assets/message.png' />
+    <view class='item-title'>消息</view>
+  </view>
+  <view class='line' />
+  <view class='item' bindtap='onFollowTap'>
+    <image class='icon' src='/assets/follow.png' />
+    <view class='item-title'>关注</view>
+  </view>
+  <view class='line' />
+  <view class='item' bindtap='onOccupyTap'>
+    <image class='icon' src='/assets/occupy1.png' />
+    <view class='item-title'>已占领</view>
+  </view>
+  <view class='line' />
+  <view class='item' bindtap='onTrackTap'>
+    <image class='icon' src='/assets/track.png' />
+    <view class='item-title'>我的足迹</view>
+  </view>
+</view>
+<view class='menu-bar'>
+  <image class='down-icon' src='/assets/down.png' />
+  <text class='menu-title'>创建的美食菜单</text>
+  <image class='settings' src='/assets/settings.png' bindtap='onSettingsTap' />
+</view>
+<view class='menu' id='{{ item.menu_id }}' bindtap='onMenuTap' wx:key='{{ index }}' wx:for='{{ menus }}'>
+  <image class='menu-image' src='{{ item.imageUrl }}' mode='aspectFill' />
+  <text class='name'>{{ item.name }}</text>
+  <text class='count'>{{ item.count }}份</text>
+  <image class='more' id='{{ item.menu_id }}' src='/assets/more.png' catchtap='onMoreTap' />
+</view>
+<view class='rich-tab-bar' style='animation:{{ titleAnimation }} 0.3s;bottom:{{ titleBottom }};' wx:if='{{ titleRichTabBarDidOpen }}'>
+  <view class='tab-bar-title'>创建的菜单</view>
+  <view class='list'>
+    <view class='item' catchtap='onNewMenu'>
+      <image class='icon' src='/assets/add_menu.png' />
+      <view class='item-title'>创建新菜单</view>
+    </view>
+    <view class='line' />
+    <view class='item' catchtap='onEditMenus'>
+      <image class='icon' src='/assets/menu_management.png' />
+      <view class='item-title'>菜单管理</view>
+    </view>
+    <view class='line' />
+    <view class='item' catchtap='onRecover'>
+      <image class='icon' src='/assets/recover.png' />
+      <view class='item-title'>恢复菜单</view>
+    </view>
+  </view>
+</view>
+<view class='short-rich-tab-bar' style='animation:{{ menuAnimation }} 0.3s;bottom:{{ menuBottom }};' wx:if='{{ menuRichTabBarDidOpen }}'>
+  <view class='tab-bar-title'>菜单：{{ name }}</view>
+  <view class='short-list'>
+    <view class='line' />
+    <view class='item' catchtap='onEditMenu'>
+      <image class='icon' src='/assets/edit.png' />
+      <view class='item-title'>编辑菜单信息</view>
+    </view>
+    <view class='line' />
+    <view class='item' catchtap='onDeleteMenu'>
+      <image class='icon' src='/assets/delete.png' />
+      <view class='item-title'>删除</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+.comment-box {
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  height: 100rpx;
+  background-color: white;
+  border-top: 1rpx solid #cdcdcd;
+}
+
+.singleline-input {
+  font-size: 30rpx;
+  color: #515151;
+  width: 610rpx;
+  height: 90rpx;
+  position: relative;
+  right: -15rpx;
+}
+
+.comment-submit {
+  font-size: 30rpx;
+  color: white;
+  background-color: #00d244;
+  width: 64rpx;
+  height: 42rpx;
+  position: relative;
+  right: -632rpx;
+  top: -80rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid white;
+  padding: 13rpx 20rpx;
+}
+
+.comment-submit:active {
+  background-color: #cdcdcd;
+}
+
+.empty {
+  margin-top: 100rpx;
+  width: 750rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #707070;
+}

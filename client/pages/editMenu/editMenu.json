@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "inputBox": "/components/inputBox/inputBox",
+    "authorize": "/components/authorize/authorize"
+  },
+  "disableScroll": true
+}

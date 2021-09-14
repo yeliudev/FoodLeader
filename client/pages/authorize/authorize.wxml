@@ -1,0 +1,6 @@
+<view class='notice'>为了正常使用我们的功能，请授权我们获取您的用户信息，靴靴~</view>
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" wx:if='{{ !userInfoAuthorized }}'>获取用户信息</button>
+<view class='authorized' wx:else>用户信息已授权</view>
+<view class='notice'>授权定位功能可用于更方便发布足迹，也便于为您推荐当地的美食介绍</view>
+<button open-type="openSetting" lang="zh_CN" wx:if='{{ !userLocationAuthorized }}'>授权用户定位</button>
+<view class='authorized' wx:else>用户定位已授权</view>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "track": "/components/track/track",
+    "collection": "/components/collection/collection",
+    "inputBox": "/components/inputBox/inputBox",
+    "authorize": "/components/authorize/authorize"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

@@ -1,0 +1,152 @@
+.notice-container {
+  position: absolute;
+  width: 750rpx;
+  height: auto;
+}
+
+.notice {
+  display: block;
+  text-align: center;
+  font-size: 32rpx;
+  color: #a0a0a0;
+}
+
+.photo-swiper {
+  position: absolute;
+  width: 750rpx;
+  height: 900rpx;
+}
+
+.photo-container {
+  position: relative;
+  right: -75rpx;
+  width: 600rpx;
+  height: 900rpx;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.label {
+  position: fixed;
+}
+
+.right {
+  float: right;
+}
+
+.dot-right {
+  display: block;
+  float: right;
+  white-space: nowrap;
+  position: relative;
+  top: -7rpx;
+  left: -2rpx;
+  width: 12rpx;
+  height: 12rpx;
+  background-color: black;
+  border-radius: 100%;
+  opacity: 0.55;
+}
+
+.line-right {
+  display: block;
+  float: right;
+  white-space: nowrap;
+  position: relative;
+  top: -4rpx;
+  left: -2rpx;
+  width: 28rpx;
+  height: 4rpx;
+  background-color: black;
+  opacity: 0.55;
+}
+
+.text-right {
+  display: block;
+  float: right;
+  white-space: nowrap;
+  position: relative;
+  top: -25rpx;
+  left: -2rpx;
+  font-size: 28rpx;
+  background-color: black;
+  opacity: 0.55;
+  color: white;
+  border-radius: 50rpx;
+  padding: 5rpx 24rpx;
+}
+
+.dot {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  top: -27rpx;
+  left: -2rpx;
+  width: 12rpx;
+  height: 12rpx;
+  background-color: black;
+  border-radius: 100%;
+  opacity: 0.55;
+}
+
+.line {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  top: -31rpx;
+  left: -2rpx;
+  width: 28rpx;
+  height: 4rpx;
+  background-color: black;
+  opacity: 0.55;
+}
+
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  top: -25rpx;
+  left: -2rpx;
+  font-size: 28rpx;
+  background-color: black;
+  opacity: 0.55;
+  color: white;
+  border-radius: 50rpx;
+  padding: 5rpx 24rpx;
+}
+
+.photo {
+  width: 600rpx;
+  height: 900rpx;
+  border-radius: 8rpx;
+}
+
+.submit-container {
+  position: absolute;
+  width: 750rpx;
+  height: auto;
+}
+
+.submit {
+  position: absolute;
+  left: 40rpx;
+  text-align: center;
+  width: 670rpx;
+  height: 65rpx;
+  border-radius: 50rpx;
+  background-color: rgba(22, 20, 24, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 34rpx;
+  padding-top: 15rpx;
+  font-family: PingFang SC;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.submit:active {
+  background-color: #e2e1e3;
+  color: #69686a;
+}
+
+.preview-canvas {
+  position: absolute;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "inputBox": "/components/inputBox/inputBox",
+    "authorize": "/components/authorize/authorize"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}
